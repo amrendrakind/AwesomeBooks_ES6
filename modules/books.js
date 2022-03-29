@@ -22,7 +22,7 @@ const displayBooks = (library) => {
 
     removeBtn.addEventListener('click', () => {
       library.removeBook(book.id);
-      displayBooks();
+      displayBooks(library);
     });
     bookElement.appendChild(headTitle);
     bookElement.appendChild(removeBtn);
@@ -55,8 +55,8 @@ const addBook = (library) => {
     const bookAuthor = author.value;
     const bookID = generateBookID();
     library.addBook(bookTitle, bookAuthor, bookID);
-    displayBooks();
-    saveBooks();
+    displayBooks(library);
+    saveBooks(library);
     title.value = null;
     author.value = null;
   }
