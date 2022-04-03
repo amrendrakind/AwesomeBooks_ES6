@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  font-family: poppins, sans-serif;
+}
+
+body {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+nav {
+  height: auto;
+  padding-left: 15px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  padding-right: 10px;
+  border-right: 3px solid black;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav ul li:last-child {
+  padding-right: 15px;
+  border-right: none;
+}
+
+.date-time {
+  font-size: 15px;
+  text-align: end;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+
+.books-self {
+  margin-top: 5vh;
+}
+
+.book {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.book h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.books {
+  width: 50%;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.book button {
+  height: 30px;
+  padding: 0 10px;
+}
+
+.book button:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(44, 30, 107, 0.2);
+}
+
+.odd-color {
+  background-color: rgb(201, 202, 207);
+  font-weight: bold;
+}
+
+.add-book {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-book input {
+  width: 50%;
+  height: 28px;
+  padding-left: 8px;
+}
+
+.add-btn {
+  margin-left: auto;
+  margin-right: 24.5%;
+}
+
+.active-link {
+  color: blue;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info ul {
+  list-style: none;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+  width: 90%;
+  display: flex;
+  border: 3px solid black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0 5%;
+  margin-bottom: 10px;
+}
+
+footer p {
+  padding-left: 14px;
+}
